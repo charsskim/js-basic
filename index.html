@@ -34,7 +34,7 @@
      :복합대입연산자 :대입연산자와 산술연산자가 결합된 형태
 
     조건문(조건식의 결과에 따라 분기)
-    :비교연산자를 활용해서 반환되는 true;false값에 따라의 코의 분기처리
+    :비교연산자를 활용해서 반환되는 true;false값에 따라의 코드의 분기처리
     if(조건식1){
       만약 조건식1ㅣ true면 해당 코드블록을 실행하고 조건문 중지
       조건식1이 false면 코드블록 무시하고 다음 조건식 넘어감
@@ -57,7 +57,28 @@
      if(조건식)실행할 코드한줄
      */
 
+    //현재 시간값 반환
+    const hour = new Date().getHours();
+    console.log(hour)
 
+
+    //현재 시간이 5보다 같거나 크고 그와동시에 12보다 작을때 true
+    console.log(hour >= 5 && hour < 12)
+    //현재시간이 5보다 같거나 크고 혹은 12보다 적을때 true
+    //body요소의 스타일값중 배경색의 해당하는 값을 aqua로 대입
+    document.body.style.backgroundColor = 'aqua'
+
+    //미션
+    //-현재시간이 5-11시면 body배경색상 orange변경
+    //-현재시간이 11~15사이면 body배경색상 lightblue로 변경
+    //-현재시간이 15~13사이면 body배경색상 pink로 변경
+    //-현재시간이 13보다 크고 5보다 적으면 'black'으로 변경
+
+    if (hour >= 5 && hour <= 11) document.body.style.backgroundColor = 'orange';
+    if (hour >= 11 && hour <= 15) document.body.style.backgroundColor = 'lightblue';
+
+    if (hour < 15 && hour < 19) document.body.style.backgroundColor = 'pink';
+    if (hour >= 19 && hour < 5) document.body.style.backgroundColor = 'black';
   </script>
 </body>
 
