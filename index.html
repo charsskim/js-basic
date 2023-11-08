@@ -74,10 +74,9 @@
     //-현재시간이 15~13사이면 body배경색상 pink로 변경
     //-현재시간이 13보다 크고 5보다 적으면 'black'으로 변경
 
-    if (hour >= 5 && hour <= 11) document.body.style.backgroundColor = 'orange';
-    if (hour >= 11 && hour <= 15) document.body.style.backgroundColor = 'lightblue';
-
-    if (hour < 15 && hour < 19) document.body.style.backgroundColor = 'pink';
+    if (hour >= 5 && hour <= 12) document.body.style.backgroundColor = 'orange';
+    if (hour >= 13 && hour <= 15) document.body.style.backgroundColor = 'lightblue';
+    if (hour > 15 && hour < 19) document.body.style.backgroundColor = 'pink';
     if (hour >= 19 && hour < 5) document.body.style.backgroundColor = 'black';
   </script>
 </body>
